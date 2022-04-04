@@ -12,14 +12,130 @@
 }
 
 :root {
-  --red: hsl(0, 100%, 74%) 
+  --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
   --blue: hsl(248, 32%, 49%);
   --dark-blue: hsl(249, 10%, 26%) ;
   --grayish-blue: hsl(246, 25%, 77%);
+  --color-lightest: #f0f2f5;
 }
 
 body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+
 }
+
+.App {
+  display: flex;
+  background-color: #f0f2f5;
+  padding: 120px 30px;
+}
+
+.form-wrapper {
+  min-height: 53rem;
+  width: 90rem;
+  background-image: url('./images/bg-intro-desktop.png');
+  background-color: var(--red);
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 8.75rem;
+}
+
+.section-left {
+  
+}
+
+.section-left h1 {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.section-left p {
+  color: hsl(0, 0%, 92%);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-left: 70px;
+}
+
+.btn-try-it-free {
+  border: none;
+  background-color: var(--blue);
+  color: hsl(0, 0%, 92%);;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-try-it-free-bold {
+  font-weight: 700;
+  color: #ffff;
+}
+
+.form-secton form{
+  padding: 40px;
+  background-color: #ffff;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  border: 1.5px solid rgb(220, 218, 218);
+}
+
+
+input:hover{
+  border: none;
+  border: 1.5px solid rgb(65, 65, 143);
+}
+
+input:active{
+  border: none;
+  border: 1.5px solid rgb(65, 65, 143);
+}
+
+::placeholder {
+  color: rgb(113, 111, 111);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.claim-trial {
+  background-color: var(--green);
+  padding: 20px;
+  color: rgba(247, 247, 247, 0.858);
+  font-size: 17px;
+  font-weight: 700;
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.form-secton p {
+  color: rgb(202, 209, 218);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-secton .terms-and-services {
+  color: rgb(231, 101, 101);
+} 

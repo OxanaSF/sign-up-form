@@ -3,17 +3,18 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <div className="form-wrapper">
       <div className="section-left">
-        <h1>Learn to code by watching others </h1>
+        <h1>Learn to code by <br/>watching others </h1>
         <p>
-          See how experienced developers solve problems in real-time. Watching
-          scripted tutorials is great, but understanding how developers think is
+          See how experienced developers solve problems in real-time. <br/> Watching
+          scripted tutorials is great, but understanding how <br/> developers think is
           invaluable.
         </p>
       </div>
       <div className="section-right">
         <button className="btn-try-it-free">
-          <span>Try it free 7 days</span> then $20/mo. thereafter 
+          <span className="btn-try-it-free-bold">Try it free 7 days</span> then $20/mo. thereafter 
         </button>
         <div className="form-secton">
             <form id="form">
@@ -30,12 +31,13 @@ function App() {
                 <input type="password" className="password" placeholder="Password" id="password"></input>
               </div>
 
-              <button>Claim your free trial</button>
+              <button className="claim-trial">Claim your free trial</button>
               <p>By clicking the button, you are agreeing to our 
-              <span>Terms and Services</span>
+              <span className="terms-and-services">Terms and Services</span>
               </p>
             </form>
         </div>
+      </div>
       </div>
     </div>
   );
