@@ -74,9 +74,10 @@ body {
   color: hsl(0, 0%, 92%);;
   margin-bottom: 20px;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 18px;
   font-weight: 500;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-try-it-free-bold {
