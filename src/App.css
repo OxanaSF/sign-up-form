@@ -45,9 +45,6 @@ body {
   padding: 0rem 8.75rem;
 }
 
-.section-left {
-}
-
 .section-left h1 {
   font-weight: 700;
   font-size: 3.625rem;
@@ -91,13 +88,35 @@ body {
   border-radius: 0.5rem;
 }
 
-input {
+#input {
   width: 100%;
   padding: 1.375rem;
   margin-bottom: 1.25rem;
   border-radius: 0.313rem;
   border: none;
   border: 0.094rem solid rgb(220, 218, 218);
+}
+
+#input-active {
+  width: 100%;
+  padding: 1.375rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.313rem;
+  border: none;
+  border: 2px solid hsl(0, 73%, 64%);
+}
+
+#input-active::placeholder {
+  color: transparent;
+}
+
+#input-active-email {
+  width: 100%;
+  padding: 1.375rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.313rem;
+  border: none;
+  border: 2px solid hsl(0, 73%, 64%);
 }
 
 input:hover {
@@ -110,13 +129,30 @@ input:active {
   border: 0.094rem solid rgb(65, 65, 143);
 }
 
+.form-input-active {
+  opacity: 0;
+}
+
+.form-input {
+  margin-bottom: 10px;
+}
+
+.form-input p {
+  float: right;
+  color: hsl(0, 72%, 72%) !important;
+  font-style: italic;
+  font-weight: light !important;
+  font-size: 11px !important;
+}
+
 ::placeholder {
   color: rgb(113, 111, 111);
   font-size: 1rem;
   font-weight: 600;
 }
 
-.claim-trial {
+.claim-trial,
+.claim-trial-active {
   background-color: var(--green);
   padding: 1.25rem;
   color: rgba(247, 247, 247, 0.858);
@@ -131,6 +167,12 @@ input:active {
   margin-bottom: 0.75rem;
 }
 
+.claim-trial-active {
+  background-color: hsl(154, 54%, 63%);
+  color: #ffff;
+  border-bottom: 0.281rem solid hsl(152, 42%, 56%);
+}
+
 .form-secton p {
   color: rgb(202, 209, 218);
   font-size: 0.688rem;
@@ -138,6 +180,8 @@ input:active {
   text-align: center;
 }
 
-.form-secton .terms-and-services {
-  color: rgb(231, 101, 101);
+.form-secton .terms-and-services a {
+  color: hsl(0, 72%, 72%);
+  text-decoration: none;
+  font-weight: 700 !important;
 }
