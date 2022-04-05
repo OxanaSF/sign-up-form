@@ -135,6 +135,7 @@ input:active {
 
 .form-input {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .form-input p {
@@ -143,6 +144,12 @@ input:active {
   font-style: italic;
   font-weight: light !important;
   font-size: 11px !important;
+}
+
+.form-input img {
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }
 
 ::placeholder {
