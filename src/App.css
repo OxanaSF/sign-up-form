@@ -45,24 +45,93 @@ body {
   padding: 0rem 8.75rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .App {
+    padding-top: 0;
+  }
+  .form-wrapper {
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+
 .section-left h1 {
   font-weight: 700;
-  font-size: 3.625rem;
+  font-size: 3.3rem;
   line-height: 1.1;
   margin-bottom: 2.5rem;
 }
 
 .section-left p {
-  color: hsl(0, 0%, 92%);
+  color: hsl(0, 21%, 95%);
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 16.5px;
+  line-height: 1.7;
 }
 
 .section-right {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  margin-left: 4.375rem;
+  width: 50%;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-left {
+    flex: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 3rem 0rem 1.5rem;
+    width: 90%;
+  }
+  .section-left h1 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .section-left p {
+    /* width: 100%; */
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .section-right {
+    padding: 0;
+    width: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.7rem rgba(0, 0, 0, 0.15);
+    margin: 2rem !important;
+  }
+  .btn-try-it-free {
+    padding: 2rem 3.5rem !important;
+    margin: 2rem 0rem !important;
+    font-size: 1.4rem !important;
+    box-shadow: 0 0.7rem rgba(0, 0, 0, 0.15) !important;
+  }
+  input {
+    padding: 1.7rem !important;
+  }
+  ::placeholder {
+    color: rgb(136, 133, 133) !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+  }
+  .claim-trial {
+    font-size: 1.2rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .form p {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+  }
 }
 
 .btn-try-it-free {
@@ -89,11 +158,12 @@ body {
 }
 
 #input {
+  display: block;
   width: 100%;
   padding: 1.375rem;
   margin-bottom: 1.25rem;
   border-radius: 0.313rem;
-  border: none;
+  outline: none;
   border: 0.094rem solid rgb(220, 218, 218);
 }
 
@@ -102,7 +172,7 @@ body {
   padding: 1.375rem;
   margin-bottom: 1.25rem;
   border-radius: 0.313rem;
-  border: none;
+  outline: none;
   border: 2px solid hsl(0, 73%, 64%);
 }
 
